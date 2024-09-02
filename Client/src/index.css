@@ -1,0 +1,170 @@
+/* General Reset and Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Black background */
+  color: #ffffff; /* White text color for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevent page from scrolling */
+}
+
+/* Title Styling */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #ffffff; /* White title color */
+  letter-spacing: 2px; /* Adds spacing between letters */
+}
+
+/* Container for Join Room */
+.join_room {
+  background-color: #1e1e1e; /* Dark grey background for contrast */
+  border-radius: 12px; /* Rounded corners */
+  padding: 40px 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Input Field Styling */
+.join_room input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  background-color: #2b2b2b; /* Slightly lighter grey */
+  color: #ffffff; /* White text for input */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5); /* Inner shadow */
+}
+
+/* Button Styling */
+.join_room button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Blue button color */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Chat Container */
+.chat-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1a1a1a; /* Darker background for chat container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Prevents the container itself from scrolling */
+}
+
+/* Chat box styles */
+.chat-box {
+  height: 300px;
+  overflow-y: auto; /* Allows scrolling within the chat box */
+  padding: 10px;
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column; /* Aligns messages vertically */
+}
+
+/* Message container styles */
+.message-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  max-width: 70%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* User's own message container styles */
+.my-message {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+/* Other users' message container styles */
+.other-message {
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+/* Message box styles */
+.message {
+  background-color: #4caf50; /* Default color for outgoing messages */
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: #fff;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Specific styles for user's own message box */
+.my-message .message {
+  background-color: #4caf50;
+}
+
+/* Specific styles for other users' message box */
+.other-message .message {
+  background-color: #555;
+}
+
+/* Styles for the message info (author and time) */
+.message-info {
+  font-size: 12px;
+  color: #ccc; /* Lighter color for author and time */
+  margin-top: 3px;
+  text-align: left;
+}
+
+/* Chat input container styles */
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+/* Chat input field styles */
+.chat-input input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Send button styles */
+.chat-input button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #009688; /* Teal button color */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the send button */
+.chat-input button:hover {
+  background-color: #00796b;
+}
+
+.chat-box::-webkit-scrollbar{
+  display: none;
+}
