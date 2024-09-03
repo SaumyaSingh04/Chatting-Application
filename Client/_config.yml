@@ -1,6 +1,0 @@
-exclude:
-  - node_modules
-  - vendor
-  - .git
-  - Gemfile
-  - Gemfile.lock
