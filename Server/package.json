@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "build": "react-scripts build",
     "run": "node server.js",
     "start": "nodemon server.js"
   },
