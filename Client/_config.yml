@@ -1,4 +1,6 @@
 exclude:
   - node_modules
-  - other_directories_to_exclude
-
+  - vendor
+  - .git
+  - Gemfile
+  - Gemfile.lock
