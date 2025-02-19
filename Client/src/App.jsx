@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import Chat from "./chat";
 import music from "./mixkit-tile-game-reveal-960.wav"
 
-const socket = io.connect("http://localhost:3000");
+const socket = io.connect("https://chatting-application-nrzo.onrender.com");
 
 function App() {
 
